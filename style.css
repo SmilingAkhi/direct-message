@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*styling the reciever info*/
+#reciever-info {
+  border: 1px solid red;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+}
+
+#reciever-pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#reciever-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
