@@ -3,14 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*styling container*/
+#container {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+}
 /*styling the reciever info*/
 #reciever-info {
-  border: 1px solid red;
-  padding: 10px;
+  /* border: 1px solid red; */
+  height: 50px;
+  padding: 15px;
   display: flex;
   align-items: center;
+  background-color: rgb(24, 23, 23);
   gap: 20px;
-  background-color: transparent;
+  opacity: 0.6;
 }
 
 #reciever-pfp {
@@ -21,4 +33,14 @@
 #reciever-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+#messages {
+  display: flex;
+  flex: 1;
+}
+#messaging-action {
+  height: 50px;
+  background-color: rgb(24, 23, 23);
 }
