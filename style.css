@@ -34,14 +34,20 @@
   font-weight: bold;
   color: white;
 }
-#messages {
+#messagesWrapper {
   display: flex;
   flex: 1;
+}
+#messages {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px;
 }
 /*stylin messaging actions*/
 #messaging-action {
   display: flex;
-
   padding: 20px;
   gap: 10px;
   flex-shrink: 1;
@@ -64,4 +70,15 @@
 }
 #send:hover {
   border: 2px solid rgb(64, 64, 236);
+}
+/*styling dom generated element*/
+.messageContainer {
+  display: flex;
+  align-self: flex-start;
+  padding: 10px;
+  background-color: rgb(62, 68, 71);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 10px;
 }

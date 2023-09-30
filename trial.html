@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div id="chat-container">
+      <!-- Messages will be appended here -->
+    </div>
+
+    <script>
+      // Sample messages array
+      const messages = [
+        { user: "Alice", text: "Hello!" },
+        { user: "Bob", text: "Hi there!" },
+        { user: "Alice", text: "How are you?" },
+      ];
+
+      // Function to render messages
+      function renderMessages(messages) {
+        const chatContainer = document.getElementById("chat-container");
+
+        // Clear existing messages in the chat container
+        chatContainer.innerHTML = "";
+
+        // Loop through the messages array and create message elements
+        messages.forEach((message) => {
+          const messageElement = document.createElement("div");
+          messageElement.classList.add("message");
+          messageElement.innerHTML = `<strong>${message.user}:</strong> ${message.text}`;
+
+          // Append the message element to the chat container
+          chatContainer.appendChild(messageElement);
+        });
+      }
+
+      // Call the function to initially render messages
+      renderMessages(messages);
+    </script>
+  </body>
+</html>
