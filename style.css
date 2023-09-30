@@ -15,14 +15,12 @@
 }
 /*styling the reciever info*/
 #reciever-info {
-  /* border: 1px solid red; */
   height: 50px;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   align-items: center;
   background-color: rgb(24, 23, 23);
   gap: 20px;
-  opacity: 0.6;
 }
 
 #reciever-pfp {
@@ -40,7 +38,30 @@
   display: flex;
   flex: 1;
 }
+/*stylin messaging actions*/
 #messaging-action {
-  height: 50px;
+  display: flex;
+
+  padding: 20px;
+  gap: 10px;
+  flex-shrink: 1;
   background-color: rgb(24, 23, 23);
+}
+#getMessage {
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 80%;
+}
+#send {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#send:hover {
+  border: 2px solid rgb(64, 64, 236);
 }
